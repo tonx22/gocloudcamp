@@ -42,9 +42,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Can't get migration object: %v", err)
 	}
-	if err := m.Up(); err != nil {
-		log.Fatalf("Migration failed: %v", err)
-	}
+	m.Up()
 
 	err = transport.StartNewHTTPServer(svc, e.HTTPPort)
 	if err != nil {
