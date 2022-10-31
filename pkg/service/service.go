@@ -6,7 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	_ "github.com/lib/pq"
-	Models "gocloudcamp/pkg/models"
+	Models "github.com/tonx22/gocloudcamp/pkg/models"
 	"net/http"
 	"time"
 )

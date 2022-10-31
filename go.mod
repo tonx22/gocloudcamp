@@ -1,4 +1,4 @@
-module gocloudcamp
+module github.com/tonx22/gocloudcamp
 
 go 1.18
 

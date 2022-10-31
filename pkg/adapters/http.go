@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/tidwall/gjson"
-	Models "gocloudcamp/pkg/models"
+	Models "github.com/tonx22/gocloudcamp/pkg/models"
 	"io"
 	"net/http"
 	"strconv"
