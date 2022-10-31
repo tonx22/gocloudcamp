@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-option go_package = "v0/pb";
+option go_package = "gocloudcamp/pb";
 
 package pb;
 
