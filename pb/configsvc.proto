@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "v0/pb";
+
+package pb;
+
+// The Config service definition.
+service ConfigSvc {
+  rpc SetConfig (ConfigRequest) returns (ConfigRequest) {}
+  rpc GetConfig (ConfigRequest) returns (ConfigRequest) {}
+  rpc UpdConfig (ConfigRequest) returns (ConfigRequest) {}
+  rpc DelConfig (ConfigRequest) returns (ConfigRequest) {}
+}
+
+
+message ConfigRequest {
+  string service = 1;
+  bytes data = 2;
+  int32 version = 3;
+  bool used = 4;
+}
